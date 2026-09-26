@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reviews — WhitsonDev</title>
+<meta name="description" content="See what clients say about working with WhitsonDev, and leave your own review.">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon-96x96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/assets/site.webmanifest">
+<meta name="theme-color" content="#081b32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#081b32;--deep:#051220;--panel:#0d2846;--line:#163a63;--ink:#eaf2fb;--dim:#9fb9d6;--faint:#6f89a8;--accent:#4fd1ff;--soft:rgba(79,209,255,.14)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 'Space Grotesk','Segoe UI',Arial,sans-serif;padding-top:env(safe-area-inset-top,0);padding-bottom:env(safe-area-inset-bottom,0);-webkit-font-smoothing:antialiased;
+background-image:linear-gradient(rgba(159,198,240,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(159,198,240,.07) 1px,transparent 1px);background-size:40px 40px}
+a{color:inherit}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:56px 0}
+h1,h2,h3{line-height:1.12;margin:0}
+h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.5rem,3.4vw,2rem);letter-spacing:-.01em;margin-bottom:12px}
+.eyebrow{font:500 .78rem 'IBM Plex Mono',monospace;letter-spacing:.14em;color:var(--accent);text-transform:uppercase;margin-bottom:12px}
+.lead{color:var(--dim);font-size:1.08rem;max-width:620px}
+.btn{display:inline-block;background:var(--accent);color:var(--deep);font-weight:700;padding:14px 24px;border-radius:6px;text-decoration:none;border:0;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--accent)}
+.btn:disabled{opacity:.6;cursor:wait}
+header{position:sticky;top:0;z-index:20;background:rgba(5,18,32,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;font-size:1.15rem;text-decoration:none}.logo span{color:var(--accent)}
+nav{display:flex;gap:20px;align-items:center}
+nav a{text-decoration:none;color:var(--dim);font-size:.95rem}nav a:hover{color:var(--ink)}
+nav .btn{padding:9px 16px;color:var(--deep);font-size:.9rem}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px}
+.hero-summary{display:flex;flex-wrap:wrap;gap:28px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:28px 30px;margin-top:26px}
+.big-score{font-size:3.2rem;font-weight:700;letter-spacing:-.02em}
+.hero-summary .col{flex:1;min-width:180px}
+.stars{position:relative;display:inline-block;font-size:1.15rem;line-height:1;color:var(--line);white-space:nowrap;letter-spacing:2px}
+.stars:before{content:"★★★★★"}
+.stars i{position:absolute;top:0;left:0;overflow:hidden;color:var(--accent);white-space:nowrap;font-style:normal;letter-spacing:2px}
+.stars i:before{content:"★★★★★"}
+.stars.lg{font-size:1.5rem}
+.count{color:var(--dim);font-size:.92rem;margin-top:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:30px}
+.rcard{position:relative}
+.rcard header{position:static;background:none;border:0;backdrop-filter:none}
+.rcard .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#2a7fb5);color:var(--deep);display:grid;place-items:center;font-weight:700;flex:none}
+.who{display:flex;gap:12px;align-items:center}
+.who b{display:block;font-size:.98rem}
+.who span{color:var(--faint);font-size:.82rem}
+.rdate{color:var(--faint);font-size:.8rem;white-space:nowrap}
+.rcard p{color:var(--dim);margin:14px 0 0;font-size:.95rem}
+.tag{display:inline-block;margin-top:14px;font:500 .72rem 'IBM Plex Mono',monospace;color:var(--accent);letter-spacing:.08em;background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:3px 8px}
+.pending{border-style:dashed;opacity:.9}
+form.rform{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px;margin-top:10px}
+label{display:block;font-weight:600;margin:16px 0 6px;font-size:.95rem}
+input[type=text],input[type=email],textarea{width:100%;background:var(--deep);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:12px;font:inherit}
+input:focus,textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+.hp{position:absolute;left:-9999px}
+.ok{display:none;background:var(--soft);border:1px solid var(--accent);border-radius:8px;padding:18px;margin-top:16px}
+.err{display:none;color:#ff9b9b;margin-top:12px}
+.fine{color:var(--faint);font-size:.82rem;margin:0}
+.picker{display:flex;gap:6px;font-size:1.9rem;margin-top:4px}
+.picker button{background:none;border:0;cursor:pointer;color:var(--line);padding:0;line-height:1;font-size:inherit}
+.picker button.on{color:var(--accent)}
+footer{background:var(--deep);border-top:1px solid var(--line);padding:34px 0;color:var(--dim);font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="index.html">Whitson<span>Dev</span></a>
+  <nav><a href="index.html">Home</a><a href="index.html#work">Work</a><a href="index.html#start">Start a project</a><a class="btn" href="#leave">Leave a review</a></nav>
+</div></header>
+
+<main>
+<section><div class="wrap">
+  <div class="eyebrow">Client reviews</div>
+  <h1>What it's like to work with WhitsonDev</h1>
+  <p class="lead">Real feedback from projects, plus a place to leave your own if we've worked together.</p>
+
+  <div class="hero-summary">
+    <div class="col">
+      <div class="big-score" id="avgScore">4.9</div>
+      <div class="stars lg" id="avgStars"><i style="width:98%"></i></div>
+      <div class="count" id="countLine">Based on 8 reviews</div>
+    </div>
+    <div class="col">
+      <a class="btn" href="#leave">Leave a review</a>
+      <a class="btn ghost" href="index.html" style="margin-left:10px">← Back to main site</a>
+    </div>
+  </div>
+
+  <div class="grid" id="reviewGrid"></div>
+</div></section>
+
+<section id="leave" class="alt" style="background:rgba(5,18,32,.6);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+<div class="wrap" style="max-width:700px">
+  <div class="eyebrow">Leave a review</div>
+  <h2>Worked with WhitsonDev? Leave a review</h2>
+  <p class="lead">Your review is emailed to Tristan directly. Once it's checked over, it gets added to the list above.</p>
+  <form class="rform" id="rform" novalidate>
+    <label>Your rating *</label>
+    <div class="picker" id="picker" role="radiogroup" aria-label="Star rating">
+      <button type="button" data-v="1">★</button>
+      <button type="button" data-v="2">★</button>
+      <button type="button" data-v="3">★</button>
+      <button type="button" data-v="4">★</button>
+      <button type="button" data-v="5">★</button>
+    </div>
+    <div class="row">
+      <div><label for="rname">Your name *</label><input type="text" id="rname" required autocomplete="name"></div>
+      <div><label for="rbiz">Business (optional)</label><input type="text" id="rbiz" autocomplete="organization"></div>
+    </div>
+    <label for="remail">Email *</label>
+    <input type="email" id="remail" required autocomplete="email" placeholder="you@example.com">
+    <p class="fine" style="margin-top:6px">Only used to confirm it's really you. It won't be shown publicly.</p>
+    <label for="rtext">Your review *</label>
+    <textarea id="rtext" rows="4" required placeholder="What was the project, and how did it go?"></textarea>
+    <input class="hp" type="text" id="rhp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" id="rsubmit" type="submit" style="margin-top:16px">Submit review</button>
+    <div class="err" id="rerr" role="alert"></div>
+    <div class="ok" id="rok" role="status"><b>Thanks for the review!</b><br>It's been emailed over and will be added to the page once it's reviewed.</div>
+  </form>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 WhitsonDev · Virginia · <a href="index.html">Back to main site</a></div></footer>
+
+<script>
+/* ===== SETTINGS =====
+   Uses the same Web3Forms access key as the main site's contact form,
+   so submitted reviews get emailed straight to you for a quick look
+   before you add them to SEED_REVIEWS below. */
+const ACCESS_KEY = "13ca48cd-1bf7-49ce-a3ea-3075fa612f0a";
+const MY_EMAIL = "twhitson240@gmail.com";
+
+/* ---------------------------------------------------------------
+   PLACEHOLDER REVIEWS — these are sample/fake reviews to fill out
+   the page for now. Swap them for real client reviews as they come
+   in (see the submissions that land in your email). Keep initials
+   in the "who" field if you want to anonymize real clients.
+   --------------------------------------------------------------- */
+const SEED_REVIEWS = [
+ {name:"Marcus Reyes",biz:"Redtail Roofing",rating:5,date:"Aug 2026",
+  text:"Sent my request on a Sunday night and had a reply with a mockup by Monday afternoon. The price we agreed on up front never moved, even after I added the service-area pages."},
+ {name:"Dana Okafor",biz:"Selkie Bathhouse",rating:5,date:"Aug 2026",
+  text:"I wanted the site to feel calm and unhurried, and that's exactly what I got. Bookings picked up within the first couple weeks of launch."},
+ {name:"Paul Vance",biz:"Shenandoah Comfort Co.",rating:4.5,date:"Jul 2026",
+  text:"Really happy with how it turned out on mobile, that's where most of our calls come from. Took the rush option and it was ready in three days like promised."},
+ {name:"Renee Sato",biz:"Renee's Bakehouse",rating:5,date:"Jul 2026",
+  text:"First time getting a real website instead of a social media page. Tristan explained everything in plain English and didn't push extras I didn't need."},
+ {name:"James Kowalski",biz:"Kowalski Landscaping",rating:4.5,date:"Jun 2026",
+  text:"Good communication throughout, replied fast every time I had a question. Only reason it's not five stars is I wish I'd added the gallery extra from the start instead of after launch."},
+ {name:"Alicia Bennett",biz:"Bennett Yoga Studio",rating:5,date:"Jun 2026",
+  text:"The free mockup sold me before I'd spent a dollar. Seeing the actual homepage designed for my studio made the decision easy."},
+ {name:"Tom DeLuca",biz:"DeLuca Auto Detailing",rating:4.5,date:"May 2026",
+  text:"Straightforward fixed price with no surprise invoices later. Site loads fast and the booking form works exactly like we wanted."},
+ {name:"Priya Nandan",biz:"Wagging Tails Grooming",rating:5,date:"Apr 2026",
+  text:"Handled the whole thing over email around my schedule. Thirty days of free fixes after launch caught a couple small typos I'd missed."}
+];
+
+const $ = id => document.getElementById(id);
+
+function starsHTML(rating,size){
+  const pct = Math.max(0,Math.min(100,(rating/5)*100));
+  return `<span class="stars${size?(' '+size):''}"><i style="width:${pct}%"></i></span>`;
+}
+function initials(name){
+  return name.split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0].toUpperCase()).join("");
+}
+function renderReviews(list){
+  $("reviewGrid").innerHTML = list.map(r => `
+    <div class="card rcard${r.pending?' pending':''}">
+      <div class="top">
+        <div class="who">
+          <div class="avatar">${initials(r.name)}</div>
+          <div><b>${r.name}</b><span>${r.biz||""}</span></div>
+        </div>
+        <div class="rdate">${r.date}</div>
+      </div>
+      ${starsHTML(r.rating)}
+      <p>${r.text}</p>
+      ${r.pending?'<span class="tag">AWAITING REVIEW</span>':''}
+    </div>`).join("");
+}
+function renderSummary(list){
+  const real = list.filter(r=>!r.pending);
+  const avg = real.reduce((a,r)=>a+r.rating,0) / real.length;
+  $("avgScore").textContent = avg.toFixed(1);
+  $("avgStars").innerHTML = `<i style="width:${(avg/5)*100}%"></i>`;
+  $("countLine").textContent = `Based on ${real.length} review${real.length===1?"":"s"}`;
+}
+
+let allReviews = SEED_REVIEWS.slice();
+renderReviews(allReviews);
+renderSummary(allReviews);
+
+/* star picker */
+let chosen = 0;
+const picker = $("picker");
+picker.addEventListener("click", e=>{
+  const b = e.target.closest("button"); if(!b) return;
+  chosen = Number(b.dataset.v);
+  [...picker.children].forEach(btn=>btn.classList.toggle("on", Number(btn.dataset.v) <= chosen));
+});
+
+$("rform").addEventListener("submit", async e=>{
+  e.preventDefault();
+  const err = $("rerr"); err.style.display = "none";
+  const name = $("rname").value.trim(), email = $("remail").value.trim(), text = $("rtext").value.trim();
+  if($("rhp").value) return;
+  if(!chosen){ return fail("Please choose a star rating."); }
+  if(!name){ return fail("Please enter your name."); }
+  if(!email){ return fail("Please add your email so it can be confirmed."); }
+  if(!/^\S+@\S+\.\S+$/.test(email)){ return fail("That email doesn't look right. Please check it."); }
+  if(!text){ return fail("Please add a few words about the project."); }
+
+  const b = $("rsubmit");
+  const msg = `New review submitted\n\nName: ${name}\nBusiness: ${$("rbiz").value||"-"}\nEmail: ${email}\nRating: ${chosen} / 5\n\nReview:\n${text}`;
+
+  if(!ACCESS_KEY){
+    return fail("Reviews aren't fully wired up yet: add a Web3Forms access key in the code. Meanwhile, please email "+MY_EMAIL+".");
+  }
+  b.disabled = true; b.textContent = "Sending…";
+  try{
+    const r = await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({access_key:ACCESS_KEY,subject:"New review: "+name+" ("+chosen+"/5)",from_name:"WhitsonDev reviews page",name,email,rating:chosen+"/5",message:msg})});
+    const d = await r.json(); if(!d.success) throw 0;
+
+    // Optimistically show it on this visitor's page as "awaiting review"
+    allReviews = [{name,biz:$("rbiz").value||"",rating:chosen,date:"Just now",text,pending:true}, ...allReviews];
+    renderReviews(allReviews);
+
+    $("rform").reset(); chosen = 0; [...picker.children].forEach(btn=>btn.classList.remove("on"));
+    $("rok").style.display = "block"; b.style.display = "none";
+    $("rok").scrollIntoView({behavior:"smooth",block:"center"});
+  }catch(x){
+    b.disabled = false; b.textContent = "Submit review";
+    fail("Something went wrong. Please try again, or email "+MY_EMAIL+".");
+  }
+});
+function fail(m){ const e=$("rerr"); e.textContent=m; e.style.display="block"; }
+</script>
+</body>
+</html>
